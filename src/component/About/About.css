@@ -1,0 +1,11 @@
+.all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.image {
+    height: 50vh;
+}
+.about-me {
+    font-family: cursive;
+}

@@ -1,0 +1,32 @@
+.logo {
+    width: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+}
+.nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    align-items: center;
+    text-align: center;
+    border-bottom: 4px gray;
+    background: cornsilk;
+}
+.link-wrap {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 5em;
+    align-items: center;
+    text-align: center; 
+}
+.Links {
+    text-decoration: none;
+}
+.login {
+    text-decoration: none;
+}
