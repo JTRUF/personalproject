@@ -1,18 +1,15 @@
-*{
-    box-sizing: border-box;
-}
-
-.contact{
-  /* background:#92bde7; */
-  color:#485e74;
-  line-height:1.6;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding:1em;
-}
-
 .container {
-    max-width:1170px;
-    margin-left:auto;
-    margin-right:auto;
-    padding:1em;
+    display: grid;
+    grid-template-columns: 100px 4fr  5fr;
+}
+
+.left {
+      display: grid;
+      grid-auto-rows: repeat(5, 1fr);
+      background-color: #999;
+  }
+.middle {
+    display: grid;
+    grid-auto-rows: repeat(5, 1fr);
+    background-color: #999;
 }

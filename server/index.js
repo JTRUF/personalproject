@@ -75,4 +75,13 @@ app.get('/logout', function(req, res) {
     res.redirect('http://localhost:3000/#/')
 })
 
+app.get('/getAllProducts', function(req,res){
+    let db = req.app.get('db');
+    db.getAllProducts()
+    .then((products) => {
+        res.status(200).send(products)
+    })
+    .catch(() => res.status(500).send())
+})
+
 app.listen(SERVER_PORT, () => console.log(`Listening on port: ${SERVER_PORT}`));

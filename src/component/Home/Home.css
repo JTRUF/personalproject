@@ -7,7 +7,7 @@
 }
 .social-media-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     background: cornsilk;
 }
 .Facebook_logo {
@@ -15,6 +15,10 @@
     padding: 2px;
 }
 .Instagram_logo {
+    height: 40px;
+    padding: 2px;
+}
+.Pinterest_logo {
     height: 40px;
     padding: 2px;
 }
