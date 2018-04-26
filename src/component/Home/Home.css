@@ -1,14 +1,9 @@
-.temporary_image {
-    height: 79vh;
-}
-.footer {
-    background: cornsilk;
-    height: 100px;
-}
 .social-media-links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 40px 40px 40px 7fr;
+    grid-gap: 5px;
     background: cornsilk;
+    padding: 20px;
 }
 .Facebook_logo {
     height: 40px;

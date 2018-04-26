@@ -40,7 +40,7 @@ export default class NavBar extends Component {
                     <Link to='/Products' className='Links'>Products</Link>
                     <Link to='/About' className='Links'>About</Link>
                     <Link to='/Contact' className='Links'>Contact</Link>
-                    <Link to='/Shopping_Cart' className='Links'>Cart</Link>
+                    <Link to='/Cart' className='Links'>Cart</Link>
                 </div>
             </nav>
             </header>

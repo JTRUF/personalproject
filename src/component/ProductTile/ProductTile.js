@@ -34,7 +34,7 @@ class ProductTile extends Component {
                   <h3>${element.price}</h3>
                 </div> 
 
-                <div className="button">
+                <div className="Add">
                   <button className="add">Add to Cart</button>
                 </div>
 

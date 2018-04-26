@@ -5,7 +5,9 @@
 }
 .image {
     height: 50vh;
+    padding: 20px;
 }
 .about-me {
     font-family: cursive;
+    padding: 25px;
 }

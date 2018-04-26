@@ -1,6 +1,24 @@
+.header {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: center;
+}
+.Facebook_logo:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.Instagram_logo:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.Pinterest_logo:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 .container {
     display: grid;
     grid-template-columns: 100px 4fr  5fr;
+    padding: 10px;
 }
 
 .left {
@@ -12,4 +30,48 @@
     display: grid;
     grid-auto-rows: repeat(5, 1fr);
     background-color: #999;
+}
+.right {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    border: 1px solid black;
+    padding: 5px;
+    background: linear-gradient(to bottom right, #E3F2FD
+    , #64B5F6);
+}
+.name {
+    margin: 5px;
+    width: 30vw;
+    height: 25px;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+.email {
+    margin: 5px;
+    width: 30vw;
+    height: 25px;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+.subject {
+    margin: 5px;
+    width: 30vw;
+    height: 25px;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+.message {
+    height: 25vh;
+    width: 30vw;
+    margin: 5px;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+.send {
+    padding: 5px 50px;
+    border-radius: 25px;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+.send:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

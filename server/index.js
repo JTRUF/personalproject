@@ -5,6 +5,7 @@ const passport = require('passport');
 const Auth0Strategy = require('passport-auth0');
 const bodyParser = require('body-parser');
 const massive = require('massive');
+var nodemailer = require('nodemailer');
 
 const app = express();
 const {
@@ -14,7 +15,9 @@ const {
     CLIENT_ID,
     CLIENT_SECRET,
     CALLBACK_URL,
-    CONNECTION_STRING
+    CONNECTION_STRING,
+    MY_EMAIL,
+    PASSWORD
 } = process.env;
 
 massive(CONNECTION_STRING).then(db => {
@@ -25,6 +28,7 @@ app.use(session({
     resave: false,
     saveUninitialized: true
 }))
+//--- AUTHENTICATION START ---//
 app.use(passport.initialize());
 app.use(passport.session());
 passport.use(new Auth0Strategy({
@@ -74,7 +78,9 @@ app.get('/logout', function(req, res) {
     req.logOut();
     res.redirect('http://localhost:3000/#/')
 })
+//--- AUTHENTICATION END ---//
 
+//--- ENDPOINTS START---//
 app.get('/getAllProducts', function(req,res){
     let db = req.app.get('db');
     db.getAllProducts()
@@ -83,5 +89,31 @@ app.get('/getAllProducts', function(req,res){
     })
     .catch(() => res.status(500).send())
 })
+//--- ENDPOINTS END ---//
+//--- NODEMAILER START---//
+app.post('/api/sendEmail', (req, res) => {
+    nodemailer.createTestAccount((err,account) => {
+        let transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: process.env.MY_EMAIL,
+                pass: process.env.PASSWORD
+            }
+        });
+        let mailOptions = {
+            from: req.query.email,
+            to: process.env.MY_EMAIL,
+            subject: req.query.subject,
+            text: req.query.message
+        };
+        transporter.sendMail(mailOptions, (error, info) => {
+            if(error){
+                return console.log(error);
+            }
+            res.send(mailOptions)
+        });
+    })
+})
+//--- NODEMAILER END ---//
 
 app.listen(SERVER_PORT, () => console.log(`Listening on port: ${SERVER_PORT}`));

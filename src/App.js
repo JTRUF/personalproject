@@ -8,7 +8,7 @@ import Services from './component/Services/Services';
 import Products from './component/Products/Products';
 import About from './component/About/About';
 import Contact from './component/Contact/Contact';
-import Shopping_Cart from './component/Shopping_Cart/Shopping_Cart';
+import Cart from './component/Cart/Cart';
 
 export default class App extends Component {
   render() {
@@ -21,7 +21,7 @@ export default class App extends Component {
                     <Route component={Products} path='/Products'/>
                     <Route component={About} path='/About'/>
                     <Route component={Contact} path='/Contact'/>
-                    <Route component={Shopping_Cart} path='/Shopping_Cart'/>
+                    <Route component={Cart} path='/Shopping_Cart'/>
         </Switch>
       </div>
     );
