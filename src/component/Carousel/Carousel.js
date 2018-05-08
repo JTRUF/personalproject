@@ -38,7 +38,7 @@ class Carousel extends Component {
             slidesToShow: 3,
             slidesToScroll: 1,
             swipeToSlide: true,
-            autoPlay: true,
+            autoplay: true,
             speed: 1000,
             autoPlaySpeed: 1000,
             cssEase: "linear",
@@ -75,46 +75,46 @@ class Carousel extends Component {
           <div>
                 <Slider ref={slider => (this.slider = slider)}{...settings}>
                   <div>
-                    <h3><img className="tree1" src={tree1} alt="1" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree1" src={tree1} alt="1" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree2" src={tree2} alt="2" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree2" src={tree2} alt="2" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree3" src={tree3} alt="3" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree3" src={tree3} alt="3" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree4" src={tree4} alt="4" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree4" src={tree4} alt="4" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree5" src={tree5} alt="5" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree5" src={tree5} alt="5" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree6" src={tree6} alt="6" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree6" src={tree6} alt="6" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree7" src={tree7} alt="7" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree7" src={tree7} alt="7" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree8" src={tree8} alt="8" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree8" src={tree8} alt="8" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree9" src={tree9} alt="9" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree9" src={tree9} alt="9" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree10" src={tree10} alt="10" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree10" src={tree10} alt="10" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree11" src={tree11} alt="11" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree11" src={tree11} alt="11" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree12" src={tree12} alt="12" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree12" src={tree12} alt="12" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree13" src={tree13} alt="13" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree13" src={tree13} alt="13" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                   <div>
-                    <h3><img className="tree14" src={tree14} alt="14" style={{height: 650, padding: 10}}/></h3>
+                    <h3><img className="tree14" src={tree14} alt="14" style={{width: 375, height: 500, padding: 10}}/></h3>
                   </div>
                 </Slider>
                 <div style={{ textAlign: "center"}} className="buttons">

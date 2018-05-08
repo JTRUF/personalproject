@@ -1,16 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Arapey');
+
 .list1 {
-    font-family: cursive;
     padding: 30px;
+    font-family: 'Arapey', cursive;
+    /* text-shadow: 2px 2px 4px #000000; */
+    color: black;
+    border-radius: 25px;
+    border: 2px solid black;
+    width: 85vw;
+    height: 195px;
+    margin-left: 60px;
 }
 .list2 {
-    font-family: cursive;
     padding: 30px;
-}
-.list3 {
-    font-family: cursive;
-    padding: 30px;
-}
-.list4 {
-    font-family: cursive;
-    padding: 30px;
+    font-family: 'Arapey', cursive;
+    /* text-shadow: 2px 2px 4px #000000; */
+    color: black;
+    border-radius: 25px;
+    border: 2px solid black;
+    width: 85vw;
+    height: 325px;
+    margin-left: 60px;
 }

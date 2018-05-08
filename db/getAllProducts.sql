@@ -1,2 +1,2 @@
-select img_url, name, price from pictures
+select * from pictures
 join products on pictures.product_id = products.id;

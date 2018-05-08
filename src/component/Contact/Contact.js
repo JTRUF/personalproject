@@ -48,24 +48,22 @@ render() {
             <h1 className="header">Contact Information</h1>
         <div className="container">
             <span className="left">
-                <p>Email</p>
-                <p>Address</p>
-                <p><a href="https://www.facebook.com/TheChritstmasTreeLady/"><img className="Facebook_logo" src={facebook} alt="Facebook_logo"/></a></p>
-                <p><a href="https://www.instagram.com/ashleethechristmastreelady"><img className="Instagram_logo" src={instagram} alt="Instagram_logo"/></a></p>
-                <p><a href="https://www.pinterest.com/thechristmastreelady/"><img className="Pinterest_logo" src={pinterest} alt="Pinterest_logo"/></a></p>
-            </span>
-            <span className="middle">
-                <p>ashleethechristmastreelady@gmail.com</p>
-                <p>Salt Lake City, Utah area</p>
-                <p>Like us on Facebook</p>
-                <p>Follow on Instagram</p>
-                <p>Follow on Pinterest</p>
+                    <p className="e">Email</p>
+                    <p>ashleethechristmastreelady@gmail.com</p>
+                    <p className="l">Location</p>
+                    <p>Salt Lake City, Utah</p>
+                    <p className="f"><a href="https://www.facebook.com/TheChritstmasTreeLady/"><img className="Facebook_logo" src={facebook} alt="Facebook_logo"/></a></p>
+                    <p>Like us on Facebook</p>
+                    <p className="i"><a href="https://www.instagram.com/ashleethechristmastreelady"><img className="Instagram_logo" src={instagram} alt="Instagram_logo"/></a></p>
+                    <p>Follow on Instagram</p>
+                    <p className="f"><a href="https://www.pinterest.com/thechristmastreelady/"><img className="Pinterest_logo" src={pinterest} alt="Pinterest_logo"/></a></p>
+                    <p>Follow on Pinterest</p>
             </span>
             <span className="right">
-                <input className="name" placeholder="Full Name" onChange={(e) => this.handleInputChangeName(e.target.value)}/>
-                <input className="email" placeholder="Email" onChange={(e) => this.handleInputChangeEmail(e.target.value)}/>
-                <input className="subject" placeholder="Subject" onChange={(e) => this.handleInputChangeSubject(e.target.value)}/>
-                <textarea rows="4" cols="50" className="message" placeholder="Message: -- Please include email address in message body" onChange={(e) => this.handleInputChangeMessage(e.target.value)}/>
+                <input className="name" placeholder="First Name" onChange={(e) => this.handleInputChangeName(e.target.value)}/>
+                <input className="email" placeholder="Last Name" onChange={(e) => this.handleInputChangeEmail(e.target.value)}/>
+                <input className="subject" placeholder="Email" onChange={(e) => this.handleInputChangeSubject(e.target.value)}/>
+                <textarea rows="4" cols="50" className="message" placeholder="Message:" onChange={(e) => this.handleInputChangeMessage(e.target.value)}/>
                 <button className="send" onClick={this.handleSend}><h2>Send</h2></button>
             </span>
         </div>

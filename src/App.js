@@ -21,7 +21,7 @@ export default class App extends Component {
                     <Route component={Products} path='/Products'/>
                     <Route component={About} path='/About'/>
                     <Route component={Contact} path='/Contact'/>
-                    <Route component={Cart} path='/Shopping_Cart'/>
+                    <Route component={Cart} path='/Cart'/>
         </Switch>
       </div>
     );

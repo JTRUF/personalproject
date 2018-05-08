@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import logo from '../../images/Logo.png';
 import './NavBar.css';
 import axios from 'axios';
+import cart from '../../images/cart.png';
 
 
 export default class NavBar extends Component {
@@ -20,27 +21,25 @@ export default class NavBar extends Component {
     render() {
     return(
         <div>
+            <div>
+                <img className="logo" src={logo} alt="logo"/>
+            </div>
             <header>
             <nav className="nav">
-                    <div>
-                        <img className="logo" src={logo} alt="logo"/>
-                    </div>
-                    <div>
+                <div className='link-wrap'>
                         {
                             this.state.user
                             ?
-                            <a href='http://localhost:4000/logout' className='login'>Logout</a>
+                            <a href='http://localhost:4000/logout' className='Links'>Logout</a>
                             :
-                            <a href='http://localhost:4000/auth' className='login'>Login</a>
+                            <a href='http://localhost:4000/auth' className='Links'>Login</a>
                         }
-                    </div>
-                <div className='link-wrap'>
                     <Link to='/' className='Links'>Home</Link>
                     <Link to='/Services' className='Links'>Services</Link>
                     <Link to='/Products' className='Links'>Products</Link>
                     <Link to='/About' className='Links'>About</Link>
                     <Link to='/Contact' className='Links'>Contact</Link>
-                    <Link to='/Cart' className='Links'>Cart</Link>
+                    <Link to='/Cart' className='Links'><img className="cart" src={cart} alt="cart"></img></Link>
                 </div>
             </nav>
             </header>
