@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../../images/Logo.png';
+import logo from '../../images/Logo3.png';
 import './NavBar.css';
 import axios from 'axios';
 import cart from '../../images/cart.png';
@@ -40,6 +40,8 @@ export default class NavBar extends Component {
                     <Link to='/About' className='Links'>About</Link>
                     <Link to='/Contact' className='Links'>Contact</Link>
                     <Link to='/Cart' className='Links'><img className="cart" src={cart} alt="cart"></img></Link>
+                        <label for="toggle">&#9776;</label>
+                        <input type="checkbox" id="toggle"/>
                 </div>
             </nav>
             </header>

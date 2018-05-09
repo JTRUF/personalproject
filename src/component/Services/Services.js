@@ -5,8 +5,9 @@ export default function Services() {
     return (
         <div>
            
-            <h1 className="list1"><h3 className="header1">1. Custom Kit</h3> You tell me what you want and I will put together your custom kit within the budget you give me. This Service is $70 </h1>
-            <h1 className="list2"><h3 className="header1">2.  Decorate</h3> Whether you buy a pre made kit, a custom kit, or just want me to put up your existing tree decor, I can come to your house and put it on your tree for you. The tree needs to be ready to go, I do not set the tree up or do lights. This service runs from $75-$200 depending on size of your tree and your location.  </h1>
+            <h3 className="list1"><h1 className="header1">Custom Design</h1>We specialize in custom designing the tree of your dreams. Contact us for your free consultation today! This Service is $70 </h3>
+            <h3 className="list2"><h1 className="header2">Decorate</h1> I can come decorate your tree whether you buy a pre made kit, custom kit, or just want me to use your existing decor. The tree needs to be ready to go, I do not set it up or do lights. This service runs from $75-$200 depending on size of your tree and your location. Contact me for more info! </h3>
+            <h3 className="list3"><h1 className="header3">Shipping and Returns</h1>In order to keep our prices low we do not offer shipping at this time.<h4>All sales are final, returns are not accepted at this time.</h4></h3>
         </div>
     )
 } 

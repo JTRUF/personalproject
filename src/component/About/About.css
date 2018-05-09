@@ -4,15 +4,49 @@
     flex-direction: row;
     justify-content: center;
 }
-.image {
-    height: 50vh;
-    padding: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
 .image-span {
     padding: 30px;
+    position: relative;
 }
+.pic-background {
+    position: absolute;
+    height: 355px;
+    width: 360px;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+.image {
+    position: relative;
+    height: 50vh;
+    padding: 30px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    margin-top: 5px;
+}
+
 .about-me {
     font-family: 'Arapey', cursive;
     padding: 30px;
+    padding-top: 14px;
+}
+.main-text {
+    padding-top: 9px;
+}
+@media(max-width: 415px) {
+    .all {
+        display: flex;
+        flex-direction: column;
+    }
+    .image {
+        height: 275px;
+        /* padding: 30px; */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    .image-span {
+        padding: 10px;
+    }
+    .about-me {
+        font-family: 'Arapey', cursive;
+        padding-top: 0;
+    }
 }

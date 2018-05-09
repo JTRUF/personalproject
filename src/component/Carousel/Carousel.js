@@ -63,10 +63,12 @@ class Carousel extends Component {
                 }
               },
               {
-                breakpoint: 480,
+                breakpoint: 415,
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,
+                  dots: false,
+                  centerPadding: '10px'
                 }
               }
             ]
@@ -118,10 +120,10 @@ class Carousel extends Component {
                   </div>
                 </Slider>
                 <div style={{ textAlign: "center"}} className="buttons">
-                  <button className="play" onClick={this.play}>
+                  <button className="play" style={{padding: 5, paddingLeft: 8, fontSize: 15}} onClick={this.play}>
                   Play
                   </button>
-                  <button className="button" onClick={this.pause}>
+                  <button className="button" style={{padding: 5, marginLeft: 5, fontSize: 15}} onClick={this.pause}>
                   Pause
                   </button>
                 </div>

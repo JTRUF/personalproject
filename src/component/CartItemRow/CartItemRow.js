@@ -34,13 +34,13 @@ class CartItemRow extends Component {
 
     return (
         <div className="cart-item" style={{backgroundColor: n % 2 ?'#BBB': 'white'}}>
-            <h3>{item.name}</h3>
+            <h3 className="item-name">{item.name}</h3>
             {
                 this.state.edit
                 ?
                 <span className="qty-update">
                     <input type="number" value={this.state.quantity} onChange={e=>this.handleInput(e)} name="quantity"/>
-                    <button onClick={()=>this.modQuantity()}>Update</button>
+                    <button className="update-button" onClick={()=>this.modQuantity()}>Update</button>
                 </span>
                 :
                 <p className="quantity" onClick={()=>this.toggleEdit()} title="Edit">
@@ -48,7 +48,7 @@ class CartItemRow extends Component {
             }
             <p className="unit-price">${item.price}</p>
             <p className="price">${(item.price * this.state.quantity).toFixed(2)}</p>
-            <button onClick={()=>this.props.remove(item.cart_id)}>Remove</button>
+            <button className="remove" onClick={()=>this.props.remove(item.cart_id)}>Remove</button>
         </div>
         )
     } 

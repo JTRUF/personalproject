@@ -42,10 +42,11 @@ render() {
         <div className="cart-container">
             <section className="cart-line-items">
                 <div className="cart-header">
-                    <h3>Product</h3>
-                    <p className="quantity">Quantity</p>
-                    <p className="price">Unit Price</p>
-                    <p className="price">Price</p>
+                    <h3 className="product">Product</h3>
+                    <h3 className="quantity">Quantity</h3>
+                    <h3 className="unit-price">Unit Price</h3>
+                    <h3 className="price">Price</h3>
+                    <div></div>
                 </div>
                     <div className="line"></div>
                 {
@@ -53,7 +54,7 @@ render() {
                     ?
                     cart
                     :
-                    <h3>No items in cart</h3>
+                    <h3 className="default">No items in cart</h3>
                 }
             </section>
             <hr/>

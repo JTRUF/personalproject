@@ -25,4 +25,36 @@
     height: 5vh;
     grid-column-start: 4;
     justify-self: center;
+    padding-right: 140px;
+    padding-top: 10px;
+}
+
+
+
+@media(max-width: 414px) {
+    .social-media-links {
+        display: block;
+    }
+    .Facebook_logo {
+        height: 40px;
+        padding-right: 15px;
+    }
+    .Instagram_logo {
+        height: 40px;
+        padding-right: 15px;
+    }
+    .Pinterest_logo {
+        height: 40px;
+        padding-right: 15px;
+    }
+    .review {
+        font-family: 'Shadows Into Light Two', cursive;   
+    }
+    .stars {
+        grid-column: span 4;
+        height: 5vh;
+        grid-column-start: 4;
+        justify-self: center;
+        padding-right: 0;
+    }
 }

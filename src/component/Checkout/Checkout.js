@@ -19,7 +19,7 @@ class Checkout extends Component{
                 token = {this.onToken}
                 stripeKey = {process.env.REACT_APP_STRIPE_KEY}
                 amount = {this.props.amount}>
-                <button style={{backgroundColor: '#DCDCDC'}}>Purchase</button>
+                <button style={{backgroundColor: 'white', height: 'fitContent', width: 'fitContent', padding: 5, fontSize: 15}}>Purchase</button>
             </StripeCheckout>
         </div>
         )

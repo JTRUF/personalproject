@@ -5,9 +5,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    width: 25vw;
-    padding: 20px;
+    /* width: 50%; */
+    width: 35vw;
+    padding: 5px;
+
 }
 .nav {
     display: flex;
@@ -46,20 +47,62 @@
 .Links:hover {
     transform: scale(1.1);
 }
-/* .Links::before {
-    content: '';
-    display: block;
-    height: 5px;
-    width:0%;
-    background-color: black;
-    transition: all ease-in-out 250ms;
-}
-.Links:hover::before {
-    width: 100%;
-} */
 .login {
     text-decoration: none;
 }
 .cart {
     height: 30px;
+}
+/* hamburger menu */
+label {
+    display:none;
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display:none;
+}
+@media only screen and (max-width: 657px) {
+    .nav {
+        border: none;
+        border-top: 0.25px solid #666;
+        border-bottom: 0.25px solid #666;
+        text-align: right;
+        height: 50px;
+        line-height: 50px;
+    }
+    .link-wrap {
+        height: 50px;
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: flex-end;
+	    align-items: center;
+	    align-content: stretch;
+    }
+    .Links {
+        text-decoration: none;
+        color: gray;
+        margin: 0 10px;
+        line-height: 70px;
+        border: none;
+        margin: 0;
+        display:none;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+        width: 26px;
+        float: right;
+    }
+     #toggle:checked + .menu {
+        display: block;
+    }
+    .logo {
+        width: 40vw;
+        padding: 5px;
+    }
 }

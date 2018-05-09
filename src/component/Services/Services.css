@@ -1,24 +1,82 @@
 @import url('https://fonts.googleapis.com/css?family=Arapey');
 
+.header1 {
+    margin-top: 0;
+    font-size: 35px;
+}
+.header2 {
+    margin-top: 0;
+    font-size: 35px;
+}
+.header3 {
+    margin-top: 0;
+    font-size: 35px;
+}
 .list1 {
     padding: 30px;
-    font-family: 'Arapey', cursive;
-    /* text-shadow: 2px 2px 4px #000000; */
+    font-family: 'Arapey', sans-serif;
+    font-size: 25px;
     color: black;
-    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
     border: 2px solid black;
     width: 85vw;
-    height: 195px;
+    height: fit-content;
     margin-left: 60px;
 }
 .list2 {
     padding: 30px;
-    font-family: 'Arapey', cursive;
-    /* text-shadow: 2px 2px 4px #000000; */
+    font-family: 'Arapey', sans-serif;
+    font-size: 25px;
     color: black;
-    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
     border: 2px solid black;
     width: 85vw;
-    height: 325px;
+    height: fit-content;
     margin-left: 60px;
+}
+.list3 {
+    padding: 30px;
+    font-family: 'Arapey', sans-serif;
+    font-size: 25px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid black;
+    width: 85vw;
+    height: fit-content;
+    margin-left: 60px;
+}
+h4 {
+    font-size: 25px;
+}
+@media only screen and (max-width: 415px){
+    .list1 {
+        width: 80vw;
+        height: fit-content;
+        border: none;
+        margin: 10px;
+        padding: 30px;
+        font-size: 25px;
+    }
+    .list2 {
+        width: 80vw;
+        height: fit-content;
+        border: none;
+        margin: 10px;
+        margin-bottom: 0;
+        padding: 30px;
+        font-size: 25px;
+    }
+    .list3 {
+        width: 80vw;
+        height: fit-content;
+        border: none;
+        margin: 10px;
+        margin-bottom: 0;
+        padding: 30px;
+        font-size: 25px;
+    }
+    h4 {
+        margin-top: 4px;
+        margin-bottom: 0;
+    }
 }

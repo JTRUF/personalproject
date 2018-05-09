@@ -44,7 +44,7 @@ class Products extends Component {
 
                 <div className="product-box">
                   <h3>{element.name}</h3>
-                  <h3>${element.price}</h3>
+                  <h3 className="product-price">${element.price}</h3>
                 </div> 
 
                 <div className="Add">

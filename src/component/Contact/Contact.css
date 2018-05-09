@@ -8,6 +8,7 @@
 	align-items: flex-end;
     align-content: center;
     font-family: 'Arapey', cursive;
+    margin-top: 0;
 }
 .Facebook_logo:hover {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -39,6 +40,7 @@
     grid-gap: 10px;
     font-family: 'Arapey';
     font-size: 16px;
+    background-color: rgb(255, 255, 255, 0.7);
   }
 .right {
     display: flex;
@@ -51,6 +53,8 @@
     padding: 5px;
     width: 45vw;
     height: 60vh;
+    background-color: rgb(255, 255, 255, 0.7);
+    margin-left: 5px;
 }
 .name {
     margin: 5px;
@@ -72,16 +76,139 @@
 }
 .message {
     height: 25vh;
-    width: 30vw;
+    width: 30.5vw;
     margin: 5px;
+    font-size: 18px;
     background-color:rgba(255, 255, 255, 0.5);
 }
 .send {
     padding: 1px 20px;
     border-radius: 25px;
     background-color:rgba(255, 255, 255, 0.5);
+    margin-top: 4px;
 }
 .send:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: #DCDCDC;
+    background-color: rgba(255, 255, 255, 0.863);
+}
+.button-text {
+    margin: 7px;
+}
+.e {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.l {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.f {
+    margin-bottom: 5px;
+}
+.i {
+    margin-bottom: 5px;
+}
+.p {
+    margin-bottom: 5px;
+}
+.follow {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+@media (max-width: 415px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: center;
+        font-family: 'Arapey', cursive;
+        padding-top: 0;
+        margin: 0;
+        margin-top: 10px;
+        text-shadow: 1px 1px gray;
+    }
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        padding: 0;
+    }
+    .left {
+        border: 1px solid black;
+        background-color: rgb(255, 255, 255, 0.8);
+        padding: 5px;
+        width: 90vw;
+        height: 62vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Arapey';
+        font-size: 16px;
+        padding-bottom: 10px;
+      }
+    .right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        border: 1px solid black;
+        background-color: rgb(255, 255, 255, 0.8);
+        padding: 5px;
+        width: 90vw;
+        height: 55vh;
+        margin: 15px;
+    }
+    .name {
+        width: 75vw;
+    }
+    .email {
+        width: 75vw;
+    }
+    .subject {
+        width: 75vw;
+    }
+    .message {
+        width: 77vw;
+        font-size: 18px;
+    }
+    .send {
+        padding: -5px 5px;
+        border-radius: 15px;
+        background-color:rgba(255, 255, 255, 0.438);
+        margin-top: 5px;
+    }
+    .button-text {
+        margin: 7px;
+    }
+    .e {
+        margin-bottom: -5px;
+        font-size: 20px;
+    }
+    .l {
+        margin-bottom: -5px;
+        font-size: 20px;
+    }
+    .f {
+        margin-bottom: -5px;
+    }
+    .i {
+        margin-bottom: -5px;
+    }
+    .f {
+        margin-bottom: -5px;
+    }
+    .follow {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
 }
