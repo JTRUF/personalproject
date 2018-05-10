@@ -47,6 +47,29 @@
     }
     .about-me {
         font-family: 'Arapey', cursive;
+        padding-top: 5px;
+        padding-bottom: 0;
+    }
+    .main-text {
         padding-top: 0;
+    }
+    .pic-background {
+        display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: center;
+        align-content: stretch;
+        padding-left: 20px;
+    }
+    .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+        padding-left: 62px;
+        padding-top: 40px;
     }
 }

@@ -52,15 +52,14 @@ input {
     }
     .products {
         display: block;
-        /* padding: 25px; */
         height: 80px;
     }
     .products-list {
         width: 350px;
         height: 504px;
-        /* padding-bottom: 5px; */
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         text-align: center;
+        padding-left: 20px;
     }
     .product-box {
         font-size: 20px;

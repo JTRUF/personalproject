@@ -34,7 +34,7 @@ class Carousel extends Component {
             centerMode: true,
             dots: true,
             infinite: true,
-            arrows: true,
+            arrows: false,
             slidesToShow: 3,
             slidesToScroll: 1,
             swipeToSlide: true,

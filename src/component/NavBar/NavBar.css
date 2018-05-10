@@ -67,7 +67,7 @@ label {
 }
 @media only screen and (max-width: 657px) {
     .nav {
-        border: none;
+        border: 2px solid rgb(154, 156, 150);
         border-top: 0.25px solid #666;
         border-bottom: 0.25px solid #666;
         text-align: right;
@@ -84,15 +84,19 @@ label {
 	    align-content: stretch;
     }
     .Links {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         text-decoration: none;
-        color: gray;
-        margin: 0 10px;
-        line-height: 70px;
-        border: none;
-        margin: 0;
-        display:none;
+        font-family: 'Arapey', serif;
+        font-size: 17px;
+        transition: all;
+        color: black;
     }
-    label {
+    .cart {
+        height: 20px;
+    }
+    /* label {
         display: block;
         cursor: pointer;
         width: 26px;
@@ -100,9 +104,9 @@ label {
     }
      #toggle:checked + .menu {
         display: block;
-    }
+    } */
     .logo {
-        width: 40vw;
+        width: 47vw;
         padding: 5px;
     }
 }

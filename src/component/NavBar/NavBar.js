@@ -6,6 +6,7 @@ import axios from 'axios';
 import cart from '../../images/cart.png';
 
 
+
 export default class NavBar extends Component {
     constructor(){
         super()
@@ -40,8 +41,8 @@ export default class NavBar extends Component {
                     <Link to='/About' className='Links'>About</Link>
                     <Link to='/Contact' className='Links'>Contact</Link>
                     <Link to='/Cart' className='Links'><img className="cart" src={cart} alt="cart"></img></Link>
-                        <label for="toggle">&#9776;</label>
-                        <input type="checkbox" id="toggle"/>
+                        {/* <label for="toggle">&#9776;</label> */}
+                        {/* <input type="checkbox" id="toggle"/> */}
                 </div>
             </nav>
             </header>

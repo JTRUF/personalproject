@@ -14,11 +14,9 @@
 }
 .cart-item .unit-price{
     text-align: right;
-    /* padding-right: 8px; */
 }
 .cart-item .price{
     text-align: right;
-    /* padding-right: 8px; */
 }
 .cart-item .quantity{
     text-align: right;
@@ -51,4 +49,14 @@
     margin-left: 15px;
     padding-right: 0;
     margin-right: 0;
+}
+@media (max-width: 415px) {
+    .cart-item {
+        display: grid;
+        grid-template-columns: repeat(5,63px); 
+        text-align: center;
+    }
+    .cart-item p {
+        height: 20px;
+    }
 }
