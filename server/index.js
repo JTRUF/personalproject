@@ -21,7 +21,11 @@ const {
     MY_EMAIL,
     PASSWORD,
     S_STRIPE_KEY,
-    REACT_APP_STRIPE_KEY
+    REACT_APP_STRIPE_KEY,
+    REACT_APP_LOGIN,
+    REACT_APP_LOGOUT,
+    SUCCESSREDIRECT,
+    FAILUREREDIRECT
 } = process.env;
 app.use(bodyParser.json());
 app.use(cors())
@@ -29,6 +33,7 @@ app.use(cors())
 massive(CONNECTION_STRING).then(db => {
     app.set('db', db);
 })
+app.use(express.static(__dirname + './../build'));
 app.use(session({
     secret: SESSION_SECRET,
     resave: false,
@@ -68,8 +73,8 @@ passport.deserializeUser((id, done) => {
 
 app.get('/auth', passport.authenticate('auth0'))
 app.get('/auth/callback', passport.authenticate('auth0', {
-    successRedirect: 'http://localhost:3000/#/',
-    failureRedirect: 'http://localhost:4000'
+    successRedirect: SUCCESSREDIRECT,
+    failureRedirect: FAILUREREDIRECT
 }))
 
 app.get('/auth/me', function(req, res) {
@@ -82,7 +87,7 @@ app.get('/auth/me', function(req, res) {
 
 app.get('/logout', function(req, res) {
     req.logOut();
-    res.redirect('http://localhost:3000/#/')
+    res.redirect(SUCCESSREDIRECT)
 })
 //--- AUTHENTICATION END ---//
 
