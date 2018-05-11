@@ -28,12 +28,7 @@ class Cart extends Component {
             this.getCart()
         }).catch(console.error)
     }
-    // checkout(){
-    //     axios.post('/api/order').then(res=>{
-    //         console.log(res)
-    //         this.props.history.push('/orders')
-    //     }).catch(console.error)
-    // }
+    
 render() {
     const cart = this.state.products.map((c,i)=>{return <CartItemRow n={i} key={i} item={c} remove={this.remove} refreshCart={this.getCart}/>})
     const cartTotal = (this.state.products.reduce((s,v)=>s+(v.quantity*v.price),0)).toFixed(2) || '0.00'

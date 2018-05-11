@@ -100,10 +100,15 @@ app.post('/api/charge', function(req, res){
         currency: 'usd',
         description: 'Example charge',
         source: req.body.token.id
-      })
-      res.sendStatus(200) // clear out cart here
-  })
-  //--- STRIPE END---//
+    })
+    db.cart.empty_cart(req.user.id).then(empty => { // clear out cart here
+        res.status(200).send('Order placed')
+    }).catch(err => {
+        console.error(err)
+        res.status(500).send(err)
+    })
+})
+//--- STRIPE END---//
 
 //--- ENDPOINTS START---//
 //--- Products Endpoints ---//
@@ -181,68 +186,6 @@ app.delete('/api/cart/:id', (req, res)=>{
         res.status(500).send(err)
     })
 })
-//--- Order Endpoints ---//
-// app.post('/api/order', (req,res)=>{
-//     let db = req.app.get('db')
-//     console.log(req.user.id)
-//     db.cart.get_cart(req.user.id).then(cart_items=>{
-//         console.log('products', products)
-//         db.orders.new_order(req.user.id).then(new_order=>{
-//             new_order = new_order[0]
-//             console.log('new_order',new_order)
-//             let orderStack = []
-//             cart_items.forEach(item=>{
-//                 console.log('item',JSON.stringify(item))
-//                 orderStack.push(db.orders.add_order_item(new_order.id, item.id, item.quantity, item.price))
-//             })
-//             Promise.all(orderStack).then(resp=>{
-//                 db.cart.empty_cart(req.user.id)
-//                 res.status(200).send('Order placed')
-//             }).catch(err=>{
-//                 console.error(err)
-//                 res.status(500).send(err)
-//             })
-//         }).catch(err=>{
-//             console.error(err)
-//             res.status(500).send(err)
-//         })
-//     }).catch(err=>{
-//         console.error(err)
-//         res.status(500).send(err)
-//     })
-// })
-
-// app.get('/api/user/orders', (req, res)=>{
-//     let db = req.app.get('db')
-//     if(req.user){
-//         db.orders.get_user_orders(req.user.id).then(orders=>{
-//             let obj = _.groupBy(orders, 'order_id')
-//             let output = []
-//             for (let key in obj){
-//                 output.push(utils.consolidate(obj[key], 'items', 'order_id,order_ts,fulfilled,user_id'))
-//             }
-//             res.status(200).send(output);
-//         }).catch(err=>{
-//             console.error(err)
-//             res.status(500).send(err)
-//         })
-//     } else {
-//         res.status(200).send([])
-//     }
-// })
-
-// app.get('/api/user/order/:id', (req, res)=>{
-//     let db = req.app.get('db')
-
-//     db.orders.get_user_order(req.params.id).then(order=>{
-//         order = utils.consolidate(order, 'items', 'order_ts,fulfilled,order_id,user_id')
-//         console.log('order: ', order)
-//         res.status(200).send(order)
-//     }).catch(err=>{
-//         console.error(err)
-//         res.status(500).send(err)
-//     })
-// })
 //--- ENDPOINTS END ---//
 //--- NODEMAILER START---//
 app.post('/api/sendEmail', (req, res) => {

@@ -6,9 +6,8 @@ class Checkout extends Component{
 
   onToken = (token) => {
       token.card = void 0;  // not storing card information
-      console.log(this.props.amount)
       axios.post('/api/charge', {token, amount: this.props.amount}).then(res => {
-          alert('Thank you for your payment')
+          alert('Thank you for your payment'); window.location.reload();
       }).catch( err => console.log(err))
   }
 
