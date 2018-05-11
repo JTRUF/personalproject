@@ -4,6 +4,7 @@ import logo from '../../images/Logo3.png';
 import './NavBar.css';
 import axios from 'axios';
 import cart from '../../images/cart.png';
+import Menu from 'react-icons/lib/md/menu';
 
 
 
@@ -59,7 +60,7 @@ export default class NavBar extends Component {
             </header>
             <header className="mobile-header">
             <nav className="mobile-nav">
-                <button className='nav-button' onClick={this.handleClick}>{showMenu ? 'Hide' : 'Show'}</button>
+                        <button className='nav-button' onClick={this.handleClick}>{showMenu ? <Menu/> : <Menu/>}</button>
                     <div className={slideCSS}>
                         <div className='mobile-link-wrap'>
                             {

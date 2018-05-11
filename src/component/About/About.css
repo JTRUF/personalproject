@@ -41,6 +41,7 @@
         height: 275px;
         /* padding: 30px; */
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin-top: 25px;
     }
     .image-span {
         padding: 10px;
@@ -61,6 +62,7 @@
 	    align-items: center;
         align-content: stretch;
         padding-left: 20px;
+        margin-top: 20px;
     }
     .image {
         display: flex;
