@@ -78,5 +78,7 @@ input {
     .product-price {
         padding: 9px;
         margin: -20px;
+        padding-right: 0;
+        margin-right: 0;
     }
 }

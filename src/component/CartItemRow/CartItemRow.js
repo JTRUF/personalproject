@@ -48,7 +48,7 @@ class CartItemRow extends Component {
             }
             <p className="unit-price">${item.price}</p>
             <p className="price">${(item.price * this.state.quantity).toFixed(2)}</p>
-            <button className="remove" onClick={()=>this.props.remove(item.cart_id)}>Remove</button>
+            <button className="remove-button" onClick={()=>this.props.remove(item.cart_id)}>Remove</button>
         </div>
         )
     } 

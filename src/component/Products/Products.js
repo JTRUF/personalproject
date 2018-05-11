@@ -49,7 +49,7 @@ class Products extends Component {
 
                 <div className="Add">
                 {/* <form onSubmit={e=>this.addToCart(e)}> */}
-                    <input type="number" onChange={e=>this.handleInput(e)} name="quantity" value={this.state.quantity}/>
+                    <input type="number" name="quantity" value={this.state.quantity}/>
                   <button className="add" onClick={()=>this.addToCart(element.id)}>Add to Cart</button>
                 {/* </form> */}
                 </div>

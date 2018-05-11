@@ -92,11 +92,11 @@
     }
     .mobile-header {
         display: block;
+        text-align: right;
         /* border: 2px solid rgb(154, 156, 150);
         border-top: 0.25px solid #666;
-        border-bottom: 0.25px solid #666; */
-        text-align: right;
-        /* height: 50px;
+        border-bottom: 0.25px solid #666;
+        height: 50px;
         line-height: 50px; */
     }
     .mobileLinks {
@@ -137,13 +137,14 @@
     .nav-button {
         margin: 0;
         padding: 0;
-        width: 100px;
+        width: 75px;
         height: 30px;
         font-size: 35px;
         position: absolute;
         top: -51px;
         left: 333px;
         z-index: 555;
+        background: none;
     }
     .slide-menu {
         width: 100%;
