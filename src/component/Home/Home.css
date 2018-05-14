@@ -19,6 +19,8 @@
 }
 .review {
     font-family: 'Shadows Into Light Two', cursive;   
+    background-color: rgba(255, 255, 255, 0.6);
+
 }
 .stars {
     grid-column: span 4;

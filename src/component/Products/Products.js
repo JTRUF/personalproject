@@ -29,7 +29,7 @@ class Products extends Component {
     //   e.preventDefault();
       const query = {productID: id, quantity: this.state.quantity}
       axios.post('/api/cart', query).then(res=>{
-        this.props.history.push('/Cart')
+        this.props.history.push('/Products'); alert('Item Added to Cart');
       }).catch(console.error)
     }
 

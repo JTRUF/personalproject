@@ -26,7 +26,7 @@ class Contact extends Component {
     handleSend(){
         var {name, email, subject, message} = this.state
         axios.post(`/api/sendEmail/?name=${name}&email=${email}&subject=${subject}&message=${message}`).then(res => {
-            this.setState({message: res.data})
+            this.setState({message: res.data}); alert('Message Sent Successfully');
         })
     }
     handleInputChangeName(value){
@@ -52,11 +52,11 @@ render() {
                     <p className="follow">ashleethechristmastreelady@gmail.com</p>
                     <p className="l">Location</p>
                     <p className="follow">Salt Lake City, Utah</p>
-                    <p className="f"><a href="https://www.facebook.com/TheChritstmasTreeLady/"><img className="Facebook_logo" src={facebook} alt="Facebook_logo"/></a></p>
+                    <p className="f"><a href="https://www.facebook.com/ashleethechristmastreelady/"><img className="Facebook_logo" src={facebook} alt="Facebook_logo"/></a></p>
                     <p className="follow">Like us on Facebook</p>
                     <p className="i"><a href="https://www.instagram.com/ashleethechristmastreelady"><img className="Instagram_logo" src={instagram} alt="Instagram_logo"/></a></p>
                     <p className="follow">Follow us on Instagram</p>
-                    <p className="p"><a href="https://www.pinterest.com/thechristmastreelady/"><img className="Pinterest_logo" src={pinterest} alt="Pinterest_logo"/></a></p>
+                    <p className="p"><a href="https://www.pinterest.com/ashleethechristmastreelady/"><img className="Pinterest_logo" src={pinterest} alt="Pinterest_logo"/></a></p>
                     <p className="follow">Follow us on Pinterest</p>
             </span>
             <span className="right">
